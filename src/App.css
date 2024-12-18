@@ -1,0 +1,341 @@
+
+
+
+/* footer */
+
+
+.footer{
+  width: 100%;
+display: flex;
+
+text-align: center;
+align-items: center;
+
+}
+.right{
+  width: 33%;
+}
+.left{
+  width: 33%;
+}
+.center{
+  width: 33%;
+}
+li{
+  list-style: none;
+}
+.center li{
+margin: 10px 0;
+}
+@media (max-width:450) {
+  .footer{
+    width: 100%;
+flex-direction: column;
+  
+  text-align: center;
+  align-items: center;
+  
+  }
+
+
+
+}
+/* end footer */
+
+/* start collection */
+.cattect{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  
+}
+
+.cattect p{
+  margin-left: 10px;
+}
+.cattect   input {
+  margin-left: 12px;
+
+
+}
+
+.cattecte{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 160px;
+  margin-top: 10px;
+}
+
+.cattecte p{
+  margin-left: 10px;
+}
+
+.cattecte   input {
+  margin-left: 12px;
+
+
+}
+
+.collection{
+display: flex;
+width: 100%;
+}
+
+.right{
+width: 30%;
+}
+.center{
+width: 70%;
+}
+.centerr{
+display: flex;
+gap: 400px;
+}
+.coll{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+width: 100%;
+gap: 5px;
+height: 100%;
+margin-top: 30px;
+}
+
+
+
+
+
+@media (max-width:750px) {
+.collection{
+  flex-direction: column;
+   width: 100%;
+ }
+
+ .coll{
+  display: grid;
+  grid-template-columns: 1fr  1fr ;
+ width: 100%;
+  gap: 20px;
+
+  
+}
+.centerr{
+  display: flex;
+ gap: 100px;
+}
+
+}
+
+
+
+
+@media (max-width:450px) {
+
+.centers{
+  flex-direction: column;
+}
+
+
+.coll{
+  display: grid;
+  grid-template-columns: 1fr ;
+  width: 100%;
+  gap: 5px;
+
+
+}
+ .collection{
+ flex-direction: column;
+  width: 100%;
+}
+
+.cattect{
+width: 200%;
+}
+
+
+.cattecte{
+  width: 200%;
+  }
+
+  .centerr{
+    flex-direction: column;
+   gap: 10px;
+  }
+}
+
+/* end  collection */
+
+/* start Product */
+
+.product{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.192);
+}
+.product-img img{
+
+width: 130px;
+display: flex;
+align-items: center;
+margin: 10px 0px;
+margin-top: 30px;
+
+}
+
+
+.btnn{
+  background-color: white;
+  color: black;
+  border: 1px solid thistle  ;
+  width: 140px;
+  padding: 10px 0px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.btnn:hover{
+  background: thistle ;
+}
+
+
+
+
+
+.prodct-info{
+  margin-top: 40px;
+}
+.prodct-info .start{
+  display: flex;
+  
+}
+.start p{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.size p{
+  font-weight: 700;
+}
+
+.reviews{
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+.views{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+.views p{
+  width:130px ;
+  color: black;
+  padding: 4px 8px;
+  background-color:rgba(0, 0, 0, 0.062);
+  text-align: center;
+  height: 50px;
+  
+}
+
+.pragra{
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  width: 100%;
+padding: 10px ;
+}
+
+.pragra p{
+  width: 90%;
+ margin-left: 25px;
+
+
+}
+
+
+@media (max-width:750px) {
+  
+  .product{
+    width: 100%;
+   flex-direction: column;
+  }
+
+
+
+}
+
+
+@media (max-width:450px) {
+  
+  .product{
+    width: 100%;
+   flex-direction: column;
+  }
+
+
+
+}
+
+
+/* login */
+/* 
+*{
+
+  margin: 0;
+  
+  }
+  
+  .sign-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3498db;
+  
+  
+  }
+  
+  .signup-form{
+  
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0,0.2);
+    text-align: center;
+  }
+  
+  
+  .signup-form h2 {
+  
+  color: #333;
+  
+  
+  }
+  .signup-form label{
+  
+    display: flex;
+  margin: 10px 0;
+  
+  }
+  .signup-form input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  .signup-form button{
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  
+  }
+  
+  .signup-form button:hover{
+  
+  background-color: #27ae60;
+  
+  } */
